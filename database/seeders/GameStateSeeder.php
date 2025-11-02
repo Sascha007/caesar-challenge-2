@@ -16,7 +16,7 @@ class GameStateSeeder extends Seeder
             ['id' => 1],
             [
                 'state' => 'preparing',
-                'challenge_text' => 'The quick brown fox jumps over the lazy dog',
+                'challenge_text' => 'Ein Geheimnis teilt man nur mit dem, der den Schlüssel hat.',
             ]
         );
     }
