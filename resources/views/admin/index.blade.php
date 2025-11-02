@@ -200,10 +200,4 @@
     </div>
 </div>
 
-<script>
-    // Auto-refresh page every 5 seconds to see updates
-    setTimeout(() => {
-        location.reload();
-    }, 5000);
-</script>
 @endsection

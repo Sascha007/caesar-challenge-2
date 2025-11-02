@@ -13,7 +13,9 @@ class RankingController extends Controller
         $gameState = GameState::current();
         $teams = Team::whereNotNull('name')
             ->where('is_ready', true)
-            ->orderByRaw('is_correct DESC, completed_at ASC NULLS LAST')
+            ->orderBy('is_correct', 'desc')
+            ->orderByRaw('CASE WHEN completed_at IS NULL THEN 1 ELSE 0 END')
+            ->orderBy('completed_at', 'asc')
             ->get();
 
         return view('ranking.index', compact('gameState', 'teams'));
@@ -24,7 +26,9 @@ class RankingController extends Controller
         $gameState = GameState::current();
         $teams = Team::whereNotNull('name')
             ->where('is_ready', true)
-            ->orderByRaw('is_correct DESC, completed_at ASC NULLS LAST')
+            ->orderBy('is_correct', 'desc')
+            ->orderByRaw('CASE WHEN completed_at IS NULL THEN 1 ELSE 0 END')
+            ->orderBy('completed_at', 'asc')
             ->get()
             ->map(function ($team) {
                 return [
