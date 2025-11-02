@@ -9,7 +9,7 @@
         <div class="flex items-center justify-between">
             <div>
                 <h1 class="text-5xl font-bold mb-2 flex items-center space-x-3">
-                    <span>🏆</span>
+                    <span class="emoji-large">🏆</span>
                     <span>Live Ranking</span>
                 </h1>
                 <p class="text-xl text-orange-100">Real-time competition leaderboard</p>
@@ -72,9 +72,9 @@
                                           'text-gray-600': index > 2 || !team.is_correct
                                       }"
                                       x-text="index + 1"></span>
-                                <span x-show="index === 0 && team.is_correct" class="text-4xl">🥇</span>
-                                <span x-show="index === 1 && team.is_correct" class="text-4xl">🥈</span>
-                                <span x-show="index === 2 && team.is_correct" class="text-4xl">🥉</span>
+                                <span x-show="index === 0 && team.is_correct" class="emoji-large">🥇</span>
+                                <span x-show="index === 1 && team.is_correct" class="emoji-large">🥈</span>
+                                <span x-show="index === 2 && team.is_correct" class="emoji-large">🥉</span>
                             </div>
                         </td>
                         <td class="px-6 py-5 whitespace-nowrap">

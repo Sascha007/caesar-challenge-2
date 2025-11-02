@@ -102,7 +102,7 @@
                     :disabled="gameState !== 'preparing' || !challengeText"
                     :class="{ 'opacity-50 cursor-not-allowed': gameState !== 'preparing' || !challengeText }">
                     <span class="flex items-center justify-center space-x-2">
-                        <span class="text-2xl">🚀</span>
+                        <span class="emoji-icon">🚀</span>
                         <span>Start Game</span>
                     </span>
                 </button>
@@ -116,7 +116,7 @@
                     :disabled="gameState !== 'running'"
                     :class="{ 'opacity-50 cursor-not-allowed': gameState !== 'running' }">
                     <span class="flex items-center justify-center space-x-2">
-                        <span class="text-2xl">⏸️</span>
+                        <span class="emoji-icon">⏸️</span>
                         <span>Stop Game</span>
                     </span>
                 </button>
@@ -129,7 +129,7 @@
                     class="w-full bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700 text-white px-6 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
                     onclick="return confirm('Are you sure you want to reset the game? This will clear all team progress.')">
                     <span class="flex items-center justify-center space-x-2">
-                        <span class="text-2xl">🔄</span>
+                        <span class="emoji-icon">🔄</span>
                         <span>Reset Game</span>
                     </span>
                 </button>
@@ -263,7 +263,7 @@
             <a href="{{ route('ranking.index') }}" 
                target="_blank"
                class="bg-white text-purple-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 flex items-center space-x-3">
-                <span class="text-2xl">🏆</span>
+                <span class="emoji-icon">🏆</span>
                 <span>Live Ranking</span>
             </a>
         </div>

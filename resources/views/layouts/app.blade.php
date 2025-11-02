@@ -8,6 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
+        /* GitHub-style system font stack */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        }
+        
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -22,6 +27,16 @@
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Emoji size control */
+        .emoji-icon {
+            font-size: 1.25rem;
+            display: inline-block;
+            line-height: 1;
+        }
+        .emoji-large {
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -42,8 +57,9 @@
                     <a href="{{ route('admin.index') }}" class="px-4 py-2 rounded-lg hover:bg-white/20 transition-all duration-200 font-medium">
                         Admin
                     </a>
-                    <a href="{{ route('ranking.index') }}" class="px-4 py-2 rounded-lg hover:bg-white/20 transition-all duration-200 font-medium">
-                        🏆 Ranking
+                    <a href="{{ route('ranking.index') }}" class="px-4 py-2 rounded-lg hover:bg-white/20 transition-all duration-200 font-medium flex items-center space-x-2">
+                        <span class="emoji-icon">🏆</span>
+                        <span>Ranking</span>
                     </a>
                 </div>
             </div>

@@ -129,13 +129,13 @@
         
         <div x-show="gameState === 'preparing'" class="bg-yellow-50 border-2 border-yellow-200 rounded-xl p-6 text-yellow-800">
             <div class="flex items-center space-x-3">
-                <span class="text-3xl">⏳</span>
+                <span class="emoji-large">⏳</span>
                 <p class="text-lg font-semibold">Waiting for the game to start...</p>
             </div>
         </div>
         <div x-show="gameState === 'stopped'" class="bg-red-50 border-2 border-red-200 rounded-xl p-6 text-red-800">
             <div class="flex items-center space-x-3">
-                <span class="text-3xl">🛑</span>
+                <span class="emoji-large">🛑</span>
                 <p class="text-lg font-semibold">Game has been stopped by the admin.</p>
             </div>
         </div>
@@ -162,7 +162,7 @@
             </div>
             <div class="mt-4 bg-blue-50 border-2 border-blue-200 rounded-xl p-4">
                 <p class="text-sm text-blue-800 flex items-start space-x-2">
-                    <span class="text-2xl">💡</span>
+                    <span class="emoji-icon">💡</span>
                     <span><strong>Hint:</strong> This text has been encrypted using a Caesar cipher. Try different shift values to decode it!</span>
                 </p>
             </div>
@@ -196,7 +196,7 @@
 
         <!-- Success Message -->
         <div x-show="isCorrect" class="bg-gradient-to-r from-green-400 to-emerald-500 text-white px-8 py-6 rounded-2xl shadow-2xl flex items-center space-x-4 animate-fade-in">
-            <span class="text-5xl">🎉</span>
+            <span class="emoji-large">🎉</span>
             <div>
                 <p class="text-2xl font-bold mb-1">Congratulations!</p>
                 <p class="text-lg">You've successfully solved the Caesar cipher challenge!</p>
@@ -207,7 +207,7 @@
     <!-- Waiting Message -->
     <div x-show="gameState === 'running' && !cipherText" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-2xl shadow-xl p-8 mb-8 animate-fade-in">
         <div class="flex items-center space-x-4">
-            <span class="text-5xl">⏳</span>
+            <span class="emoji-large">⏳</span>
             <div>
                 <p class="text-xl font-bold mb-2">Almost Ready!</p>
                 <p class="text-lg">You need to mark your team as "Ready" before the game starts to receive the challenge.</p>
