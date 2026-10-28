@@ -208,7 +208,7 @@ $allPossibilities = $caesarService->bruteForce('Khoor Zruog');
 
 ### Technologies Used
 
-- **Backend**: Laravel 10 (PHP 8.2+)
+- **Backend**: Laravel 12 (PHP 8.2+)
 - **Frontend**: Blade Templates
 - **Styling**: Tailwind CSS (CDN)
 - **JavaScript**: Alpine.js (CDN)
