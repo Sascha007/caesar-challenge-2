@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: composer
+    directory: /
+    schedule: { interval: weekly, day: monday }
+    groups: { kleine-aenderungen: { update-types: [minor, patch] } }
+    ignore:
+      # Major-Upgrades des Runtime-Frameworks nur bewusst/manuell
+      # (Laravel 13 setzt PHP 8.3 voraus, CI testet ab PHP 8.2)
+      - dependency-name: laravel/framework
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: npm
+    directory: /
+    schedule: { interval: weekly, day: monday }
+    groups: { kleine-aenderungen: { update-types: [minor, patch] } }
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly, day: monday }
+    groups: { kleine-aenderungen: { update-types: [minor, patch] } }
