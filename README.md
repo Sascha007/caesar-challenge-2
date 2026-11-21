@@ -16,7 +16,7 @@ A Laravel-based web application for running a competitive Caesar cipher decoding
 
 ### Requirements
 
-- PHP 8.2 or higher
+- PHP 8.4 or higher
 - Composer
 - SQLite or MySQL database
 - Apache web server (with mod_rewrite enabled)
@@ -208,7 +208,7 @@ $allPossibilities = $caesarService->bruteForce('Khoor Zruog');
 
 ### Technologies Used
 
-- **Backend**: Laravel 12 (PHP 8.2+)
+- **Backend**: Laravel 12 (PHP 8.4+)
 - **Frontend**: Blade Templates
 - **Styling**: Tailwind CSS (CDN)
 - **JavaScript**: Alpine.js (CDN)
